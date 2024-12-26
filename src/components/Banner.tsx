@@ -50,7 +50,7 @@ export default function Banner() {
         </div>
         <div className='flex items-center justify-center mt-10 gap-2 md:gap-5'>
           <a href="#">
-            <div className='flex items-center gap-2 h-14 md:h-16 px-8 border-[3px] border-[#162936] rounded-full bg-[#F89C2E] hover:bg-transparent transition-colors ease-linear duration-300'>
+            <div className='flex items-center flex-wrap gap-2 h-14 md:h-16 px-8 border-[3px] border-[#162936] rounded-full bg-[#F89C2E] hover:bg-transparent transition-colors ease-linear duration-300'>
               <img src={CoinLabel} alt="Coin"
                 className='h-7 w-auto md:h-8' />
               <span className='text-[#162936] text-sm md:text-lg'>

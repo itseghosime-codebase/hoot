@@ -29,12 +29,12 @@ export default function Navbar() {
                     : "translate-x-0"
                     } top-0 left-0 -z-0 w-screen items-center justify-center gap-10 h-screen bg-[#008CF4] md:relative md:bg-transparent md:w-auto md:h-auto`}>
                     <li>
-                        <a href="#" onClick={changeToggle}>
+                        <a href="#about" onClick={changeToggle}>
                             <span className='text-4xl md:text-lg text-[#162936]'>About</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" onClick={changeToggle}>
+                        <a href="#htb" onClick={changeToggle}>
                             <span className='text-4xl md:text-lg text-[#162936]'>How to buy</span>
                         </a>
                     </li>
@@ -50,7 +50,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" onClick={changeToggle}>
+                        <a href="#socials" onClick={changeToggle}>
                             <span className='text-4xl md:text-lg text-[#162936]'>Socials</span>
                         </a>
                     </li>

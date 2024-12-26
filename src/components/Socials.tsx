@@ -8,7 +8,7 @@ import { RiTelegram2Fill } from 'react-icons/ri';
 
 export default function Socials() {
     return (
-        <section className='px-6 md:px-12 lg:px-20 py-20'>
+        <section className='px-6 md:px-12 lg:px-20 py-20' id='socials'>
             <div className="md:bg-[#7EC7FD] md:p-10 xl:p-14 xl:pb-0 md:pb-0 md:border-4 border-black rounded-[40px]">
                 <div className="bg-[#0089EE] p-8 border-4 border-black rounded-[45px] flex flex-col items-center justify-center gap-4">
                     <img src={HeadingTitle} alt="GET YOUR $SOLS READY" className='max-h-14' />
@@ -56,12 +56,12 @@ export default function Socials() {
                 </div>
                 <ul className='hidden md:flex items-center justify-center gap-16 py-8'>
                     <li>
-                        <a href="#" className='text-[#162936]'>
+                        <a href="#about" className='text-[#162936]'>
                             <span className='text-lg'>About</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" className='text-[#162936]'>
+                        <a href="#htb" className='text-[#162936]'>
                             <span className='text-lg'>How to buy</span>
                         </a>
                     </li>
@@ -71,7 +71,7 @@ export default function Socials() {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className='text-[#162936]'>
+                        <a href="#socials" className='text-[#162936]'>
                             <span className='text-lg'>Socials</span>
                         </a>
                     </li>
