@@ -59,7 +59,7 @@ export default function Team() {
       <div className='grid xl:grid-cols-2 gap-10'>
         <div className='relative flex items-center flex-col justify-center'>
           <img src={Quote} alt="Meet the team" className='quote h-40 xl:h-56 mb-10 mr-20 w-auto shrink-0' />
-          <img src={ThreeMuffs} alt="Birds" className='muffed h-44 md:h-56 absolute z-10 bottom-14 shrink-0' />
+          <img src={ThreeMuffs} alt="Birds" className='muffed h-44 md:h-56 absolute z-20 bottom-14 shrink-0' />
           <img src={MuffedClouds} alt="Clouds" className='muffed h-52 w-auto shrink-0 relative z-0' />
         </div>
         <div className='max-h-[450px] overflow-hidden flex items-center md:items-start justify-between md:justify-center gap-5 flex-col md:flex-row'>

@@ -14,12 +14,13 @@ export default function Socials() {
                     <img src={HeadingTitle} alt="GET YOUR $SOLS READY" className='max-h-14' />
                     <p className='max-w-3xl text-base text-center'>Be part of the adventure. By holding Hoot, you’re not just joining a community,
                         you’re becoming a guardian of the stars.</p>
-                    <div className='mt-10 w-full'>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                    <div className='mt-12 mb-5 w-full'>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-end">
                             <div className='hidden md:block'>
                                 <img src={TrafficRight} alt="Bird Guard" className='cloud-nine' />
                             </div>
-                            <div className='flex flex-col gap-3 -rotate-2 max-w-md w-full'>
+                            <div className="flex justify-center">
+                            <div className='flex flex-col gap-3 -rotate-2 max-w-[300px] w-full '>
                                 {
                                     [{
                                         icon: Raydium,
@@ -47,6 +48,7 @@ export default function Socials() {
                                         <FaDiscord className='text-3xl text-[#162936]' />
                                     </a>
                                 </div>
+                            </div>
                             </div>
                             <div className='hidden lg:block'>
                                 <img src={TrafficLeft} alt="Bird Guard" className='cloud-nine' />

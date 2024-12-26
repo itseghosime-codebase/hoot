@@ -32,13 +32,18 @@ body {
   position: relative;
 }
 
-main{
+main {
   background-image: url('assets/noise_texture.png');
   background-size: contain;
   background-repeat: repeat;
   background-position: top;
+
 }
- 
+
+main section {
+  @apply max-w-screen-2xl mx-auto
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
