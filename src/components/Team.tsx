@@ -10,7 +10,6 @@ import CloudTwo from '../assets/Cloud-two.png'
 import { LuCircleChevronDown, LuCircleChevronUp } from 'react-icons/lu';
 import { Keyboard, Navigation } from "swiper/modules";
 import React from 'react';
-import "swiper/css";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Team() {
-  const SlideRef = React.useRef();
+  const SlideRef = React.useRef<any>();
 
   const handleNext = () => {
     SlideRef.current.swiper.slideNext();
