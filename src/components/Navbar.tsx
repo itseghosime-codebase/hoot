@@ -2,6 +2,7 @@ import React from 'react';
 import CoinLabel from '../assets/coin_label.png'
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { IoClose } from 'react-icons/io5';
+import MobileLogo from './../assets/mobile-logo.png';
 
 export default function Navbar() {
     const [clicked, setClicked] = React.useState(true);
@@ -14,7 +15,7 @@ export default function Navbar() {
             <nav className="max-w-2xl w-full md:bg-white/20 md:py-2 md:px-16 md:backdrop-blur-xl md:rounded-full">
                 <div className='md:hidden flex items-center justify-between py-4 bg-[#008CF4] px-6 relative z-10'>
                     <a href="#">
-                        <img src={CoinLabel} alt="Coin"
+                        <img src={MobileLogo} alt="Coin"
                             className='w-auto h-12' />
                     </a>
                     <button
