@@ -17,23 +17,22 @@ gsap.registerPlugin(useGSAP);
 
 
 export default function Banner() {
-  useGSAP(()=>{
-    gsap.to('.bouncing-bird',{
-      y:-20,
-      stagger:0.1,
-      duration: 1,         
-      repeat: -1,          
-      yoyo: true,          
+  useGSAP(() => {
+    gsap.to('.bouncing-bird', {
+      y: -20,
+      stagger: 0.1,
+      duration: 1,
+      repeat: -1,
+      yoyo: true,
       ease: "sine.in",
     })
-  },[])
+  }, [])
   return (
     <section className='pb-10 pt-48 px-6 md:px-12 lg:px-20 relative'>
       <div className="relative z-20">
         <div className="mb-6  flex flex-col items-center justify-center space-y-4 text-center">
           <img src={Welcome} alt="Welcome to the universe of hoot" />
-          <p className='max-w-2xl text-lg md:text-2xl text-stroke font-semibold'>In the boundless cosmos, one name echoes across
-            galaxies: Owlpha Prime, the legendary cyborg owl. </p>
+          <p className='max-w-2xl text-lg md:text-2xl text-stroke font-semibold'>Step into a world where innovation meets adventure, with Hoot as the key to unlocking limitless possibilities. </p>
         </div>
         <div className="flex items-center justify-between gap-2.5 relative z-10 max-w-4xl mx-auto">
           {

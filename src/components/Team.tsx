@@ -56,15 +56,15 @@ export default function Team() {
 
   return (
     <section className='px-6 md:px-12 xl:px-20 py-16 md:py-24 relative z-30'>
-      <div className='grid xl:grid-cols-2 gap-10'>
+      <div className='grid xl:grid-cols-2 gap-10 items-center'>
         <div className='relative flex items-center flex-col justify-center'>
           <img src={Quote} alt="Meet the team" className='quote h-40 xl:h-56 mb-10 mr-20 w-auto shrink-0' />
           <img src={ThreeMuffs} alt="Birds" className='muffed h-44 md:h-56 absolute z-20 bottom-14 shrink-0' />
           <img src={MuffedClouds} alt="Clouds" className='muffed h-52 w-auto shrink-0 relative z-0' />
         </div>
-        <div className='max-h-[450px] overflow-hidden flex items-center md:items-start justify-between md:justify-center gap-5 flex-col md:flex-row'>
-          <div>
-            <Swiper
+        <div className='overflow-hidden flex items-center md:items-start justify-between md:justify-center gap-5 flex-col md:flex-row'>
+          <div className='bg-[#008CF4] border border-[#162936] rounded-2xl pr-4 w-full gap-3 max-w-md md:py-10 md:pl-10 py-8 pl-8'>
+            {/* <Swiper
               ref={SlideRef}
               keyboard={{
                 enabled: true,
@@ -159,9 +159,12 @@ export default function Team() {
                   </a>
                 </div>
               </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
+            <p className='max-w-2xl text-lg md:text-2xl text-stroke font-semibold'>
+              $HOOT is a memecoin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. The coin is for entertainment purposes only.
+            </p>
           </div>
-          <div className='flex md:flex-col items-center w-full md:w-fit justify-between md:h-full py-14'>
+          {/* <div className='flex md:flex-col items-center w-full md:w-fit justify-between md:h-full py-14'>
             <button
               className='hover:text-[#F89C2E] transition-colors ease-in-out duration-200'
               onClick={() => handlePrev()}>
@@ -176,7 +179,7 @@ export default function Team() {
               onClick={() => handleNext()}>
               <LuCircleChevronDown className='text-5xl' />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
