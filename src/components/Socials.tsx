@@ -38,10 +38,10 @@ export default function Socials() {
                                     ))
                                 }
                                 <div className='flex items-center justify-between gap-4 lg:gap-2'>
-                                    <a href="" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
+                                    <a href="https://x.com/Hootsol_" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
                                         <FaTwitter className='text-3xl text-[#162936]' />
                                     </a>
-                                    <a href="" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
+                                    <a href="https://t.me/hootsol" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
                                         <RiTelegram2Fill className='text-3xl text-[#162936]' />
                                     </a>
                                     <a href="" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
