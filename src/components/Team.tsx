@@ -37,7 +37,7 @@ export default function Team() {
 
 
   return (
-    <section className='px-6 md:px-12 xl:px-20 py-16 md:py-24 relative z-30'>
+    <section className='px-6 md:px-12 xl:px-20 pb-16 md:pb-24 relative z-30'>
       <div className='grid xl:grid-cols-2 gap-10 items-center'>
         <div className='relative flex items-center flex-col justify-center'>
           <img src={Quote} alt="Meet the team" className='quote h-40 xl:h-56 mb-10 mr-20 w-auto shrink-0' />
