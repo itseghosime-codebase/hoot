@@ -18,7 +18,7 @@ function App() {
         <Banner /> 
         <About />
         <Htb />
-        <Tokenomic/>
+{/*         <Tokenomic/> */}
         <Team />
         <Faq />
         <Socials/>
