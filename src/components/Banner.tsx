@@ -6,11 +6,12 @@ import GreenBird from './../assets/green-bird.png';
 import EvilBird from './../assets/evil-bird.png';
 import OrangeBird from './../assets/orange-bird.png';
 import PinkBird from './../assets/pink-bird.png';
-import CloudOne from '../assets/Cloud-one.png'
-import CloudTwo from '../assets/Cloud-two.png'
-import Cloudzi from './../assets/cloudzi.png';
+import CloudOne from '../assets/gif-1.gif'
+import CloudTwo from '../assets/gif-2.gif'
+import Cloudzi from './../assets/gif-3.gif';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import React from 'react';
 
 gsap.registerPlugin(useGSAP);
 
@@ -27,10 +28,21 @@ export default function Banner() {
       ease: "sine.in",
     })
   }, [])
+
+  const [copied, setCopied] = React.useState<boolean>(false)
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText('AA1qD7GPmND9BVLYaRWLdakbZvfzkU8MG64ne7Sepump');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
   return (
     <section className='pb-10 pt-48 px-6 md:px-12 lg:px-20 relative'>
       <div className="relative z-20">
-        <div className="mb-6  flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="mb-6 relative z-0 flex flex-col items-center justify-center space-y-4 text-center">
           <img src={Welcome} alt="Welcome to the universe of hoot" />
           <p className='max-w-2xl text-lg md:text-2xl text-stroke font-semibold'>Step into a world where innovation meets adventure, with Hoot as the key to unlocking limitless possibilities. </p>
         </div>
@@ -57,16 +69,18 @@ export default function Banner() {
               </span>
             </div>
           </a>
-          <a href="#">
-            <div className='flex items-center gap-2 h-14 md:h-16 px-8 border-[3px] bg-[#162936]/10 transition-colors ease-linear duration-300 hover:bg-[#F89C2E] border-[#162936] rounded-full '>
-              <span className='text-[#162936] text-sm md:text-lg'>
-                Learn more
-              </span>
-            </div>
-          </a>
+
+          <div
+            onClick={copyToClipboard}
+            className='flex items-center max-w-xs md:max-w-max cursor-copy gap-2 h-14 md:h-16 px-8 border-[3px] bg-[#162936]/10 transition-colors ease-linear duration-300 hover:bg-[#F89C2E] border-[#162936] rounded-full '>
+            <span className='text-[#162936] text-xs break-all md:text-lg'>
+              CA: {copied ? 'COPIED' : 'AA1qD7GPmND9BVLYaRWLdakbZvfzkU8MG64ne7Sepump'}
+            </span>
+          </div>
+
         </div>
       </div>
-
+      <img src={EvilBird} alt="Birds" className='absolute z-10 h-full w-full object-contain object-center top-0 opacity-10' />
       <div className="clouds z-10 inset-0 absolute overflow-hidden">
         {/* First Fly */}
         <div className="cloud-nine">
