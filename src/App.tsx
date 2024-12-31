@@ -6,7 +6,7 @@ import LoadingScreen from "./components/LoadingScreen"
 import Navbar from "./components/Navbar"
 import Socials from "./components/Socials"
 import Team from "./components/Team"
-import Tokenomic from "./components/Tokenomic"
+// import Tokenomic from "./components/Tokenomic"
 
 
 function App() {
