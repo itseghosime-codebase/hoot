@@ -1,5 +1,5 @@
 import Raydium from '../assets/Raydium.png'
-import Pump from '../assets/pump.png'
+import Pump from '../assets/dexscreen.png'
 import CoinLabel from '../assets/coin_label.png'
 import HotBird from '../assets/hot_bird.png'
 import Marquee from './ui/marquee'
@@ -42,15 +42,19 @@ export default function About() {
                         {
                             [{
                                 icon: Raydium,
-                                label: 'Raydium'
+                                label: 'Raydium',
+                                target: ''
                             }, {
                                 icon: Pump,
-                                label: 'Pump.Fun'
+                                label: 'Dexscreener',
+                                target: 'https://dexscreener.com/solana/4nl1pyuyppedxafmvvdxllglc4axuhogzjqcu2txmq6p'
                             }].map((items, index) => (
-                                <div key={index} className='flex items-center gap-5'>
-                                    <img src={items.icon} alt={items.label} className='h-16 w-16 xl:h-28 xl:w-28 object-center justify-center' />
-                                    <h5 className='text-3xl md:text-4xl xl:text-5xl text-[#162936] font-medium'>{items.label}</h5>
-                                </div>
+                                <a key={index} href={items.target} className='inline-block'>
+                                    <div className='flex items-center gap-5'>
+                                        <img src={items.icon} alt={items.label} className='h-16 w-16 xl:h-28 xl:w-28 object-center justify-center' />
+                                        <h5 className='text-3xl md:text-4xl xl:text-5xl text-[#162936] font-medium'>{items.label}</h5>
+                                    </div>
+                                </a>
                             ))
                         }
                     </div>

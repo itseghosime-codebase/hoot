@@ -12,6 +12,8 @@ import Cloudzi from './../assets/gif-3.gif';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import React from 'react';
+import { IoCopy } from 'react-icons/io5';
+import { FaCheck } from 'react-icons/fa6';
 
 gsap.registerPlugin(useGSAP);
 
@@ -76,6 +78,8 @@ export default function Banner() {
             <span className='text-[#162936] text-xs break-all md:text-lg'>
               CA: {copied ? 'COPIED' : 'AA1qD7GPmND9BVLYaRWLdakbZvfzkU8MG64ne7Sepump'}
             </span>
+            {!copied ? <IoCopy /> :
+              <FaCheck color='green' />}
           </div>
 
         </div>

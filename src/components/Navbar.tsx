@@ -59,7 +59,7 @@ export default function Navbar() {
                     <a href="https://x.com/Hootsol_" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
                         <FaTwitter className='text-xl text-white' />
                     </a>
-                    <a href="https://t.me/hootsol" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
+                    <a href="#" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
                         <RiTelegram2Fill className='text-xl text-white' />
                     </a>
                     <a href="" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
@@ -72,7 +72,7 @@ export default function Navbar() {
                     <a href="https://x.com/Hootsol_" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
                         <FaTwitter className='text-xl text-white' />
                     </a>
-                    <a href="https://t.me/hootsol" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
+                    <a href="#" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>
                         <RiTelegram2Fill className='text-xl text-white' />
                     </a>
                     <a href="" className='flex items-center bg-[#F89C2E] border border-white p-2 justify-center rounded-full'>

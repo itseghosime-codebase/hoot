@@ -2,7 +2,7 @@ import HeadingTitle from '../assets/GET YOUR $SOLS READY.svg'
 import TrafficRight from './../assets/traffic-right.png';
 import TrafficLeft from './../assets/traffic-left.png';
 import Raydium from '../assets/Raydium.png'
-import Pump from '../assets/pump.png'
+import Pump from '../assets/dexscreen.png'
 import { FaDiscord, FaTwitter } from 'react-icons/fa6';
 import { RiTelegram2Fill } from 'react-icons/ri';
 
@@ -20,35 +20,37 @@ export default function Socials() {
                                 <img src={TrafficRight} alt="Bird Guard" className='cloud-nine' />
                             </div>
                             <div className="flex justify-center">
-                            <div className='flex flex-col gap-3 -rotate-2 max-w-[300px] w-full '>
-                                {
-                                    [{
-                                        icon: Raydium,
-                                        label: 'Raydium'
-                                    }, {
-                                        icon: Pump,
-                                        label: 'Pump.Fun'
-                                    }].map((items, index) => (
-                                        <a href="" key={index}>
-                                            <div className='flex items-center gap-3 xl:gap-5 w-full bg-[#7EC7FD] border-4 border-[#162936] py-4 justify-center rounded-2xl xl:rounded-3xl'>
-                                                <img src={items.icon} alt={items.label} className='h-7 w-7 xl:h-11 xl:w-11 object-center justify-center' />
-                                                <h5 className='text-xl xl:text-3xl text-[#162936] font-medium'>{items.label}</h5>
-                                            </div>
+                                <div className='flex flex-col gap-3 -rotate-2 max-w-[300px] w-full '>
+                                    {
+                                        [{
+                                            icon: Raydium,
+                                            label: 'Raydium',
+                                            target: ''
+                                        }, {
+                                            icon: Pump,
+                                            label: 'Dexscreener',
+                                            target: 'https://dexscreener.com/solana/4nl1pyuyppedxafmvvdxllglc4axuhogzjqcu2txmq6p'
+                                        }].map((items, index) => (
+                                            <a key={index} href={items.target}>
+                                                <div className='flex items-center gap-3 xl:gap-5 w-full bg-[#7EC7FD] border-4 border-[#162936] py-4 justify-center rounded-2xl xl:rounded-3xl'>
+                                                    <img src={items.icon} alt={items.label} className='h-7 w-7 xl:h-11 xl:w-11 object-center justify-center' />
+                                                    <h5 className='text-xl xl:text-3xl text-[#162936] font-medium'>{items.label}</h5>
+                                                </div>
+                                            </a>
+                                        ))
+                                    }
+                                    <div className='flex items-center justify-between gap-4 lg:gap-2'>
+                                        <a href="https://x.com/Hootsol_" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
+                                            <FaTwitter className='text-3xl text-[#162936]' />
                                         </a>
-                                    ))
-                                }
-                                <div className='flex items-center justify-between gap-4 lg:gap-2'>
-                                    <a href="https://x.com/Hootsol_" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
-                                        <FaTwitter className='text-3xl text-[#162936]' />
-                                    </a>
-                                    <a href="https://t.me/hootsol" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
-                                        <RiTelegram2Fill className='text-3xl text-[#162936]' />
-                                    </a>
-                                    <a href="" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
-                                        <FaDiscord className='text-3xl text-[#162936]' />
-                                    </a>
+                                        <a href="#" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
+                                            <RiTelegram2Fill className='text-3xl text-[#162936]' />
+                                        </a>
+                                        <a href="" className='flex items-center gap-5 bg-[#7EC7FD] border-4 border-[#162936] p-4 justify-center rounded-2xl'>
+                                            <FaDiscord className='text-3xl text-[#162936]' />
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                             <div className='hidden lg:block'>
                                 <img src={TrafficLeft} alt="Bird Guard" className='cloud-nine' />
